@@ -1,6 +1,6 @@
-## Package Summary
+# Package Summary
 
-**44 packages organized into 13 categories**
+*44 packages organized into 13 categories*
 
 Includes: NumPy, Pandas, scikit-learn, XGBoost, LightGBM, Plotly, Flask, Pytest, SHAP, MLflow  
 1. Production-tested versions specified  
@@ -8,7 +8,7 @@ Includes: NumPy, Pandas, scikit-learn, XGBoost, LightGBM, Plotly, Flask, Pytest,
 
 ---
 
-### Key Packages Overview
+# Key Packages Overview
 
 | Category           | Packages |
 |-------------------|---------|
@@ -28,7 +28,7 @@ Includes: NumPy, Pandas, scikit-learn, XGBoost, LightGBM, Plotly, Flask, Pytest,
 
 ---
 
-### ⚙️ Example `requirements.txt`
+# Example `requirements.txt`
 
 ```txt
 numpy==1.26.4
@@ -47,5 +47,6 @@ jupyter==1.0.0
 tqdm==4.66.2
 joblib==1.3.2
 requests==2.31.0
+```
 
 pip install -r requirements.txt
