@@ -1,4 +1,4 @@
-1. Dataset Overview
+# 1. Dataset Overview
 
 Purpose & motivation
 
@@ -8,7 +8,7 @@ Out-of-scope uses (no real lending without validation)
 
 Dataset summary (5,000 SMEs, 31 features, 20.8% defaults)
 
-2. Data Collection & Generation
+# 2. Data Collection & Generation
 
 Data source (synthetic with realistic parameters)
 
@@ -30,7 +30,7 @@ Base sector rates (4.2%-19.2% by sector)
 
 Step-by-step generation validation
 
-3. Data Description & Characteristics
+# 3. Data Description & Characteristics
 
 Detailed feature tables for all 31 features:
 
@@ -48,7 +48,7 @@ Default rates by sector
 
 Feature correlations
 
-4. Data Quality & Validation
+# 4. Data Quality & Validation
 
 | Metric                  | Target            | Actual     | Status |
 | Missing Values          | 0%                |     0%     |      ✅|
@@ -56,7 +56,7 @@ Feature correlations
 | VIF (multicollinearity) | <10               | 4.2 max    |      ✅|
 | Leakage Detection       | 4-point checklist | All passed |      ✅|
 
-5. Preprocessing & Transformations
+# 5. Preprocessing & Transformations
 
 StandardScaler (fit on train only)
 
@@ -68,7 +68,7 @@ Feature engineering pipeline
 
 Configuration JSON
 
-6. Known Limitations & Caveats (Important!)
+# 6. Known Limitations & Caveats (Important!)
 
 ❌ Synthetic Data: No temporal dynamics, extreme events, fraud scenarios
 
@@ -80,7 +80,7 @@ Configuration JSON
 
 ⚠️ Recommendations for each limitation
 
-7. Uses & Recommendations
+# 7. Uses & Recommendations
 
 ✅ Recommended:
 
