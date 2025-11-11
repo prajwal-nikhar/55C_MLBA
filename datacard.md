@@ -49,12 +49,13 @@ Default rates by sector
 Feature correlations
 
 # 4. Data Quality & Validation
-
 | Metric                  | Target            | Actual     | Status |
-| Missing Values          | 0%                |     0%     |      ✅|
-| Duplicates              | 0                 |      0     |      ✅|
-| VIF (multicollinearity) | <10               | 4.2 max    |      ✅|
-| Leakage Detection       | 4-point checklist | All passed |      ✅|
+|-------------------------|------------------|-----------|--------|
+| Missing Values          | 0%               | 0%        | ✅     |
+| Duplicates              | 0                | 0         | ✅     |
+| VIF (multicollinearity) | <10              | 4.2 max   | ✅     |
+| Leakage Detection       | 4-point checklist| All passed| ✅     |
+
 
 # 5. Preprocessing & Transformations
 
