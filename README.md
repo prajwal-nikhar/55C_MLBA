@@ -1,4 +1,4 @@
-#Sections:
+# Sections:
 1. Project Overview (AUC 0.9991, $6.35M savings)
 
 # Detailed Dataset Description:
@@ -30,9 +30,6 @@ Conda (recommended)
 # Top 15 feature importance table
 1. Sector-level analysis
 2. Business impact ($6.35M, 4.8x lift)
-
-# Best Practices (data, model, production)
-# FAQ (threshold, sector effects, retraining)
 
 # Model Performance Summary
 1. Metric	Value
