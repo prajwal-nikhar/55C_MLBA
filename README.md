@@ -1,47 +1,72 @@
-# Sections:
-1. Project Overview (AUC 0.9991, $6.35M savings)
+# Financial Risk Scoring – ML + ESG + Alt-Data
 
-# Detailed Dataset Description:
-1. Financial features (with ranges)
-2. ESG features (sector-calibrated)
-3. Alternative data signals
-4. Engineered features
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](#)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#)
+[![MLflow](https://img.shields.io/badge/MLflow-enabled-1f65d6)](#)
+[![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-ee4b2b)](#)
 
-# Data split (75-12.5-12.5%)
+A production-grade financial risk scoring pipeline that fuses **financials**, **ESG**, and **alternative data** with robust MLOps.
 
-# Leakage prevention checklist
+- **AUC-ROC:** **0.9991**
+- **Business impact:** **$6.35M savings** (97.7% loss reduction)
+- **Top-decile lift:** **4.8×**
 
-# Installation & Setup (2 options):
-Pip (quick start)
-Conda (recommended)
+---
 
-# Quick Start Guide (6 steps):
-1. Generate dataset
-2. Train model
-3. Evaluate
-4. Make predictions (with code examples)
-5. Run tests
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset & Features](#dataset--features)
+- [Data Split](#data-split)
+- [Leakage Prevention Checklist](#leakage-prevention-checklist)
+- [Architecture](#architecture)
+- [Pipeline Flow](#pipeline-flow)
+- [Installation & Setup](#installation--setup)
+- [Quick Start](#quick-start)
+- [Model Performance](#model-performance)
+- [Streamlit UI (Interactive)](#streamlit-ui-interactive)
+- [Reproducibility & MLOps](#reproducibility--mlops)
+- [Project Structure](#project-structure)
+- [License](#license)
 
-# Model Performance (comprehensive):
-1. Test set metrics (AUC, PR-AUC, Precision, Recall, F1)
-2. 5-fold cross-validation results
-3. Confusion matrix
+---
 
-# Top 15 feature importance table
-1. Sector-level analysis
-2. Business impact ($6.35M, 4.8x lift)
+## Project Overview
 
-# Model Performance Summary
-1. Metric	Value
-2. AUC-ROC	0.9991
-3. PR-AUC	0.9967
-4. Precision	0.9769
-5. Recall	0.9769
-6. F1-Score	0.9769
-7. Loss Reduction	97.7% ($6.35M)
-8. Top-Decile Lift	4.8×
-9. Additional results included:
-10. 5-fold CV stability
-11. Calibration improvement (ECE ↓ 74.9%)
-12. ESG ablation (+0.15% AUC impact)
-13. Sector-level risk differentiation
+This repository trains, evaluates, and deploys a **credit risk model** using **scikit-learn/XGBoost/LightGBM**, explains decisions with **SHAP**, tracks experiments via **MLflow**, and serves an interactive **Streamlit** dashboard.
+
+**Highlights**
+- **AUC-ROC:** 0.9991
+- **PR-AUC:** 0.9967
+- **Precision/Recall/F1:** 0.9769 / 0.9769 / 0.9769
+- **Loss reduction:** 97.7% (**$6.35M**)
+- **Top-Decile Lift:** 4.8×
+
+---
+
+## Dataset & Features
+
+- **Financial features (with ranges):** liquidity, leverage, profitability ratios (scaled to sensible ranges, e.g., `0.01–250×` as applicable).
+- **ESG features (sector-calibrated):** sector-normalized ESG scores, carbon intensity, controversies, governance signals.
+- **Alternative data signals:** market microstructure, analyst sentiment, macro drivers.
+- **Engineered features:** rolling volatility windows, risk deltas, FI×ESG interactions.
+
+---
+
+## Data Split
+
+- **Train:** 75%  
+- **Validation:** 12.5%  
+- **Test:** 12.5%
+
+---
+
+## Leakage Prevention Checklist
+
+- [x] No future-dated features  
+- [x] No target-conditioned filters or joins  
+- [x] Time-aware split for validation/test  
+- [x] Statistical leakage tests on folds  
+- [x] Strict separation of preprocessing fit between train/val/test
+
+---
