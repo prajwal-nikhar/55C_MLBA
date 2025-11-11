@@ -1,0 +1,9 @@
+Conda environment specification for reproducible deployments
+
+Python 3.8.13 specified
+
+All 44 dependencies with exact versions
+
+Includes pip packages for non-conda available libraries
+
+Ready to use with: conda env create -f environment.yml

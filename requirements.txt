@@ -1,0 +1,7 @@
+44 packages organized into 13 categories
+
+Includes: NumPy, Pandas, scikit-learn, XGBoost, LightGBM, Plotly, Flask, Pytest, SHAP, MLflow
+
+Production-tested versions specified
+
+Covers data science, ML, visualization, web framework, testing, documentation
