@@ -979,12 +979,6 @@ Asynchronous Processing
 | **Model Training** | XGBoost, LightGBM, scikit-learn | Fit & tune models | ✅ |
 | **Calibration** | scikit-learn (isotonic) | Probability calibration | ✅ |
 | **Evaluation** | scikit-learn, NumPy | Metrics, bootstrap CI | ✅ |
-| **API Server** | Flask | REST endpoints | ✅ |
-| **Containerization** | Docker, Docker Compose | Deployment packaging | ✅ |
-| **Monitoring** | MLflow, Prometheus | Performance tracking | 🔄 |
-| **Database** | PostgreSQL | Prediction logs, audit trail | 🔄 |
-| **Cache** | Redis | Performance optimization | 🔄 |
-| **CI/CD** | GitHub Actions | Automated testing & deployment | 🔄 |
 
 ---
 
